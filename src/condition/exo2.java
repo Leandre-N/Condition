@@ -1,9 +1,9 @@
 package condition;
-
+import java.util.Scanner;
 public class exo2 {
 
 	public static void main(String[] args) {
-		Scanner scanner = scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 		System.out.print("Saisissez le premier nombre : ");
 	    int nombre1 = scanner.nextInt();   
 	    System.out.print("Saisissez le deuxième nombre : ");
@@ -22,6 +22,7 @@ public class exo2 {
 	    }
 	    System.out.println("Le plus grand nombre est : " + plusGrand);
         System.out.println();
+        scanner.close();
 
 	}
 
